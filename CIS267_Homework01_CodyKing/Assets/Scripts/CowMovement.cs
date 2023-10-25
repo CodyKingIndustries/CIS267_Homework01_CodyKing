@@ -158,7 +158,7 @@ public class CowMovement : MonoBehaviour
         mooTimer += Time.deltaTime;
         if (milkType == "chocolate")
         {
-            if (Input.GetKeyDown(KeyCode.Z) && mooTimer > 2.5)
+            if (Input.GetKeyDown(KeyCode.Z) && mooTimer > 1.8)
             {
                 Instantiate(mooProjo, gunLocation.position, transform.rotation);
                 m_AudioSource.Play();
@@ -168,7 +168,7 @@ public class CowMovement : MonoBehaviour
         if (milkType == "strawberry")
         {
             {
-                if (Input.GetKeyDown(KeyCode.Z) && mooTimer > 5)
+                if (Input.GetKeyDown(KeyCode.Z) && mooTimer > 3)
                 {
                     Instantiate(mooProjo, gunLocation.position, transform.rotation);
                     Instantiate(mooStraw, strawLocation.position, transform.rotation);
@@ -179,7 +179,7 @@ public class CowMovement : MonoBehaviour
         }
         if (milkType == "white")
         {
-            if (Input.GetKeyDown(KeyCode.Z) && mooTimer > 5)
+            if (Input.GetKeyDown(KeyCode.Z) && mooTimer > 3)
             {
                 Instantiate(mooBig, gunLocation.position, transform.rotation);
                 m_AudioSource.Play();
@@ -188,7 +188,7 @@ public class CowMovement : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Z) && mooTimer > 5)
+            if (Input.GetKeyDown(KeyCode.Z) && mooTimer > 3)
             {
                 Instantiate(mooProjo, gunLocation.position, transform.rotation);
                 m_AudioSource.Play();
